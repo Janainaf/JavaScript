@@ -21,10 +21,11 @@ $(document).ready(function() {
 	var consoleOutput =  `Voici ta pyramide de ${input} etages:`;
 	htmlPyramid(input,input);
 
-		
+			console.log(consoleOutput);
 	let html = consoleOutput;
 	for(let i=0; i <= input; i++){
 		html = html.replace("\n","<br />")
 	}
 	$('#result').html(html);
+
 });
